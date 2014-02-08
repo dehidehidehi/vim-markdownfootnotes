@@ -1,18 +1,17 @@
 ## VimFootnotes for Markdown
 
-[![Vint](https://github.com/vim-pandoc/vim-markdownfootnotes/workflows/Vint/badge.svg)](https://github.com/vim-pandoc/vim-markdownfootnotes/actions?workflow=Vint)
-
-This fork is a slight tweak of the venerable [vimfootnotes][], for use
-with extended markdown.
+This fork derived from [this vim-plugin by David Sanson][1], which in turn is
+a slight tweak of the venerable [vimfootnotes][2], for use with extended
+markdown.
 
 The new script inserts footnotes in the widely supported extended markdown
-syntax:
+syntax with the addition of `fn` as a prefix to the current footnote number.
 
-```markdown
-Here is some text.[^1]
+~~~
+Here is some text.[^fn1]
 
-[^1]: Here is a note.
-```
+[^fn1]: Here is a note.
+~~~
 
 The footnote number gets determined by an automatic counter whenever a new
 footnote gets inserted. The counter works with the default arabic numerals
