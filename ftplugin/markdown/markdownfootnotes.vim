@@ -54,7 +54,7 @@
 " ReturnFromFootnote
 "  ~  closes the split window and returns to the text in proper place.
 "
-" These are mapped to <Leader>f and <Leader>r respectively.
+" These are mapped to <Leader>f and <Leader>r in normal mode respectively.
 "
 " FootnoteNumber
 "  ~  Change the current footnote number (one obligatory argument)
@@ -105,16 +105,10 @@ if !exists('g:vimfootnotelinebreak')
 endif
 
 " Mappings
-if !hasmapto('<Plug>AddVimFootnote', 'i') && mapcheck('<Leader>f', 'i') is# ''
-	imap <buffer> <Leader>f <Plug>AddVimFootnote
-endif
 if !hasmapto('<Plug>AddVimFootnote', 'n') && mapcheck('<Leader>f', 'n') is# ''
     nmap <buffer> <Leader>f <Plug>AddVimFootnote
 endif
 
-if !hasmapto('<Plug>ReturnFromFootnote', 'i') && mapcheck('<Leader>r', 'i') is# ''
-    imap <buffer> <Leader>r <Plug>ReturnFromFootnote
-endif
 if !hasmapto('<Plug>ReturnFromFootnote', 'n') && mapcheck('<Leader>r', 'n') is# ''
     nmap <buffer> <Leader>r <Plug>ReturnFromFootnote
 endif

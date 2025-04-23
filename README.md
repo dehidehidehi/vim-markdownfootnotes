@@ -19,7 +19,7 @@ and all other settings provided by `b:vimfootnotetype`. The automatic counter
 code is based on the code for the counting of HTML footnotes in [this post by
 Nick Coleman][3], adjusted slightly to work with Markdown footnotes.
 
-The script defines two mappings,
+The script defines two mappings in normal mode.
 
 ```viml
 <Leader>f " Insert a new footnote
